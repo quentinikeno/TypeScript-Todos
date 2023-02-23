@@ -1,5 +1,7 @@
 "use strict";
 const btn = document.getElementById("btn");
+const input = document.getElementById("todoinput");
 btn.addEventListener("click", () => {
-    alert("clicked");
+    alert(input.value);
+    input.value = "";
 });
