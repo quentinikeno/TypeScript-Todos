@@ -1,1 +1,5 @@
-const btn = document.getElementById("btn");
+const btn = document.getElementById("btn")!;
+
+btn.addEventListener("click", () => {
+	alert("clicked");
+});
