@@ -1,7 +1,14 @@
 const btn = document.getElementById("btn")!;
 const input = document.getElementById("todoinput")! as HTMLInputElement;
+const form = document.querySelector("form")!;
 
-btn.addEventListener("click", () => {
-	alert(input.value);
-	input.value = "";
-});
+function handleSubmit(event: SubmitEvent) {
+	event.preventDefault;
+}
+
+form.addEventListener("submit", handleSubmit);
+
+// btn.addEventListener("click", () => {
+// 	alert(input.value);
+// 	input.value = "";
+// });
