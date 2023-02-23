@@ -7,8 +7,17 @@
 		<title>Mini Project</title>
 	</head>
 	<body>
-		<input type="text" id="todoinput" placeholder="Enter a Todo" />
-		<button id="btn">Click Me!</button>
+		<form action="" id="todoform">
+			<label for="todoinput">New Todo:</label>
+			<input
+				type="text"
+				name="todoinput"
+				id="todoinput"
+				placeholder="Enter a Todo"
+			/>
+			<button id="btn" type="submit">Click Me!</button>
+		</form>
+
 		<script src="dist/index.js"></script>
 	</body>
 </html>
