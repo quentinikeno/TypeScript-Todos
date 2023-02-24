@@ -23,6 +23,10 @@ function saveTodos() {
 function handleSubmit(event: SubmitEvent) {
 	event.preventDefault();
 
+	if (input.value.trim() === "") {
+		return alert("Please enter a todo.");
+	}
+
 	const newTodo: Todo = {
 		text: input.value,
 		completed: false,
